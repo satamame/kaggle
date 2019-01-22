@@ -1,0 +1,24 @@
+【初回】
+
+Anaconda Navigator を起動。
+新規 Environment を作成 (e.g. 'tf112gpu')。
+Environment のターミナルを開く (三角をクリック -> Open Terminal)。
+ターミナルで TensorFlow をインストール (GPU 版の場合は 'conda install tensorflow-gpu')。
+'exit' で、ターミナルを出る。
+
+【毎回】(Anaconda Navigator から開く場合)
+
+Anaconda Navigator を起動。
+環境を切り替える (Home の Applications on xxx)。
+その下の 'Jupyter notebook' をインストールしていなければ、Install をクリック。
+'Jupyter notebook' の 'Launch' をクリック。
+Jupyter notebook が開いたら、このディレクトリまで移動する。
+
+【毎回】(コマンドプロンプト から開く場合)
+
+このディレクトリでコマンドプロンプトを起動。
+'conda info -e' で、仮想環境のリストを得る。
+'activate <環境名>' で、仮想環境に入る。
+Jupyter notebook をインストールしていなければ、インストールする ('conda install jupyter')。
+'jupyter notebook' で Jupyter notebook を起動する (Home がこのディレクトリになる)。
+Jupyter notebook を終了したら、'deactivate' で仮想環境から出る。
